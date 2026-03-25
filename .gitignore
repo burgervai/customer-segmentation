@@ -111,6 +111,4 @@ dmypy.json
 # Project specific
 artifacts/
 logs/
-dataset/
-*.xlsx
 *.csv

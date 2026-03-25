@@ -1,4 +1,5 @@
 import sys
+import os
 import numpy as np
 import pandas as pd
 from pipeline.exception import CustomException
@@ -10,8 +11,8 @@ class PredictPipeline:
 
     def predict(self, recency, frequency, monetary):
         try:
-            model = load_object("artifacts/model.pkl")
-            preprocessor = load_object("artifacts/preprocessor.pkl")
+            BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))`n            model = load_object(os.path.join(BASE_DIR, "artifacts", "model.pkl"))
+            preprocessor = load_object(os.path.join(BASE_DIR, "artifacts", "preprocessor.pkl"))
 
             # Log transform (same as training)
             freq_log = np.log1p(frequency)
@@ -32,3 +33,5 @@ class PredictPipeline:
 
         except Exception as e:
             raise CustomException(e, sys)
+
+
