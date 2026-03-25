@@ -1,5 +1,5 @@
 import sys
-from pipeline.exception import CustomException
+from .exception import CustomException
 from pipeline.logger import logging
 from components.data_ingestion import DataIngestion
 from components.data_transformation import DataTransformation
