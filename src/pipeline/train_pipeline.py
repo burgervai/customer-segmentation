@@ -1,9 +1,9 @@
 import sys
 from .exception import CustomException
 from .logger import logging
-from .components.data_ingestion import DataIngestion
-from .components.data_transformation import DataTransformation
-from .components.model_trainer import ModelTrainer
+from ..components.data_ingestion import DataIngestion
+from ..components.data_transformation import DataTransformation
+from ..components.model_trainer import ModelTrainer
 
 class TrainPipeline:
     def __init__(self):
