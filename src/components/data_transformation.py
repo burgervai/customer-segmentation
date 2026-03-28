@@ -5,10 +5,9 @@ import pandas as pd
 from dataclasses import dataclass
 from sklearn.preprocessing import StandardScaler
 from sklearn.pipeline import Pipeline
-from pipeline.exception import CustomException
-from pipeline.logger import logging
-from pipeline.utils import save_object
-
+from ..pipeline.exception import CustomException
+from ..pipeline.logger import logging
+from ..pipeline.utils import save_object
 @dataclass
 class DataTransformationConfig:
     preprocessor_obj_file_path: str = os.path.join("artifacts", "preprocessor.pkl")
