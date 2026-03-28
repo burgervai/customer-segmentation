@@ -1,3 +1,3 @@
-from components.data_ingestion import DataIngestion
-from components.data_transformation import DataTransformation
-from components.model_trainer import ModelTrainer
+from .data_ingestion import DataIngestion
+from .data_transformation import DataTransformation
+from .model_trainer import ModelTrainer
