@@ -2,9 +2,8 @@ import os
 import sys
 import pandas as pd
 from dataclasses import dataclass
-from pipeline.exception import CustomException
-from pipeline.logger import logging
-from components.data_transformation import DataTransformation
+from ..pipeline.exception import CustomException
+from ..pipeline.logger import logging
 
 @dataclass
 class DataIngestionConfig:
