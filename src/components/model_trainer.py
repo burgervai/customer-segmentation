@@ -5,9 +5,9 @@ import pandas as pd
 from dataclasses import dataclass
 from sklearn.cluster import KMeans
 from sklearn.metrics import silhouette_score
-from pipeline.exception import CustomException
-from pipeline.logger import logging
-from pipeline.utils import save_object
+from ..pipeline.exception import CustomException
+from ..pipeline.logger import logging
+from ..pipeline.utils import save_object
 
 @dataclass
 class ModelTrainerConfig:
